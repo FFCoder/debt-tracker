@@ -119,7 +119,7 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Dashboard"
+          children="test"
           {...getOverrideProps(overrides, "Dashboard")}
         ></Text>
         <Text

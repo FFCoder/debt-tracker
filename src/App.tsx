@@ -10,6 +10,8 @@ import {
   Card,
 } from "@aws-amplify/ui-react";
 
+import { NewTransaction, NewNavBar } from "./ui-components";
+
 type AppProps = {
   signOut: () => void;
 };
@@ -17,13 +19,13 @@ type AppProps = {
 function App(props: AppProps) {
   const { signOut } = props;
   return (
-    <View className="App">
-      <Card>
-        <Image src={logo} className="App-logo" alt="logo" />
-        <Heading level={1}>We now have Auth!</Heading>
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
+    <>
+      <NewNavBar isAuth={true} />
+      <View className="App">
+        <NewTransaction />
+        <Button onClick={signOut}>Sign Out</Button>
+      </View>
+    </>
   );
 }
 
