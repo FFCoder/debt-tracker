@@ -18,9 +18,11 @@ const signOut = () => {
   Amplify.Auth.signOut();
 };
 root.render(
-  <React.StrictMode>
-    <App signOut={signOut} />
-  </React.StrictMode>
+  <ThemeProvider theme={studioTheme}>
+    <React.StrictMode>
+      <App signOut={signOut} />
+    </React.StrictMode>
+  </ThemeProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
