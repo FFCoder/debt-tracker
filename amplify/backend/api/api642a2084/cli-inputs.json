@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/accounts": {
+      "name": "/accounts",
+      "lambdaFunction": "debttracker751b1d9a",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

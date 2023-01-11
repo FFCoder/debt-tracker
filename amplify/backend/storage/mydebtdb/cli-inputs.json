@@ -1,0 +1,10 @@
+{
+  "resourceName": "mydebtdb",
+  "tableName": "accounts",
+  "partitionKey": {
+    "fieldName": "AccountName",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
